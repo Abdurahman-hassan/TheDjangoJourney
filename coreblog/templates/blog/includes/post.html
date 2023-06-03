@@ -1,0 +1,19 @@
+{% load static %}
+<li>
+    <article class="post">
+        <a href="{% url 'post-details-page' pos.slug %}">
+            {# <img src="{% static 'blog/images/'|add:pos.image_name %}" alt="{{ pos.title }}"/>#}
+            <img src="{{ pos.image.url }}" alt="{{ pos.title }}"/>
+
+            <div class="post__content">
+                {#pos from forloop in index#}
+                <h3>{{ pos.title }}</h3>
+                <p>
+                    {{ pos.excerpt }}
+                </p>
+            </div>
+        </a>
+    </article>
+</li>
+
+{#{{ test_variable }}#}

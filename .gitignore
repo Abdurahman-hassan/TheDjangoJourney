@@ -1,0 +1,17 @@
+## Django
+*.pyc
+*.pyo
+__pycache__/
+.DS_Store
+
+## Virtualenv
+.env
+venv/
+
+## Other
+*.db
+*.log
+*.swp
+*~
+#database
+db.sqlite3

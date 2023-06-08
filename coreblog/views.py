@@ -144,6 +144,7 @@ class StartingPageView(ListView):
 #         "all_posts": all_posts
 #     })
 
+
 # class base view (ListView)
 class PostsView(ListView):
     model = Post
